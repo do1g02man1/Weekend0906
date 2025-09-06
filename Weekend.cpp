@@ -221,10 +221,11 @@ void PickJoker()
             PlayerMoney += BettingMoney * 2;
         }
         else if (PlayerMoney > BettingMoney * 2) {
-            printf("\n플레이어가 패배했습니다 . . . 베팅 금액의 2배를 내고 한번 더 하시겠습니까? [1] 예 [2] 아니오 ");
+            printf("\n플레이어가 패배했습니다 . . .\n베팅 금액의 2배를 내고 한번 더 하시겠습니까? [1] 예 [2] 아니오 ");
             std::cin >> UserInput;
             if (UserInput == 1) {
                 PlayerMoney -= BettingMoney * 2;
+                BettingMoney += (BettingMoney * 2);
                 printf("\n\n딜러의 카드 [1] | [2] 중에 하나를 선택해 주세요. ");
                 std::cin >> UserInput;
 
@@ -240,7 +241,7 @@ void PickJoker()
                 }
                 
                 if (GetJoker == UserInput) {
-                    printf("\n플레이어가 승리했습니다. 베팅 금액의 2배를 받습니다.\n\n");
+                    printf("\n플레이어가 승리했습니다. 베팅 금액의 3배를 받습니다.\n\n");
                     PlayerMoney += BettingMoney * 2;
                 }
                 else {
