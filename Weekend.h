@@ -10,7 +10,7 @@ float PriceReturn(float OriginPrice, float RatePrice);
 int PlayDice();
 
 // 점수를 주면 성적(A~F)를 주는 함수 만들기
-int ReturnGradeScore(int GradeScore);
+void ReturnGradeScore(int GradeScore);
 
 template <typename T>
 // 템플릿 함수로 Clamp 함수 구현하기
@@ -29,3 +29,18 @@ T Clamp(T value, T min, T max)
 		return max;
 	}
 }
+
+// 각 자리의 수를 합해서 출력하기
+int DevideNumber(int InputNumber);
+
+// 재귀 함수를 이용하여 10진수를 입력받아 2진수로 출력하는 함수
+void DecimalToBinary(int InputDecimal);
+
+// 슬롯 머신 게임
+void SlotMachine();
+
+// 플레이어와 적의 턴제 전투
+void TurnBasedGame();
+
+// 도둑 잡기
+void PickJoker();
